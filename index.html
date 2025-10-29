@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineBook - Book Movie Tickets Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CineBook</h2>
+            </div>
+            <div class="nav-location">
+                <select id="citySelect">
+                    <option value="">Select City</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                </select>
+            </div>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="Search for movies, events, plays...">
+            </div>
+            <div class="nav-auth">
+                <button class="btn-login">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Book Your Movie Tickets</h1>
+                <p>Experience the magic of cinema with easy online booking</p>
+            </div>
+        </section>
+
+        <!-- Now Showing Section -->
+        <section class="movies-section">
+            <h2 class="section-title">Now Showing</h2>
+            <div class="movies-grid" id="moviesGrid">
+                <!-- Movies will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section class="movies-section">
+            <h2 class="section-title">Coming Soon</h2>
+            <div class="movies-grid" id="comingSoonGrid">
+                <!-- Coming soon movies will be loaded here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Movie Details Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="movieDetails">
+                <!-- Movie details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content booking-modal">
+            <span class="close">&times;</span>
+            <div id="bookingDetails">
+                <!-- Booking process will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
